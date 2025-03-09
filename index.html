@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      background-color: #f6e4d6;
+      padding: 0;
+    }
+   
+    .lg {
+      font-family: "Playfair";
+      font-size: 40px;
+      color: #f6e4d6;
+      position: relative;
+      left: 38px;
+      top: -1px;
+    }
+    .navbar {
+      max-width: 1250px;
+      height: 70px;
+      background-color: #600c0c;
+      margin: 11px 11px;
+      padding: 10px;
+      border-radius: 150px;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      margin: 11px 64px 18px 11px;
+    }
+    .navbar ul li {
+      margin-left: 30px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #f6e4d6;
+      font-family: "Raleway";
+      font-size: 20px;
+    }
+    .navbar ul li a:hover {
+      transition: 0.5s linear;
+      text-shadow: 0 0 14px #f6e4d6;
+    }
+    #projects {
+      color: #600c0c;
+      font-family: "Raleway";
+      font-size: 30px;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .box1,
+    .box2,
+    .box3 {
+      max-width: 290px;
+      max-height: 290px;
+      background-color: #600c0c;
+      border-radius: 20px;
+      margin: 20px;
+      display: inline-block;
+    }
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .port {
+      font-family: Raleway;
+      color: #600c0c;
+      font-size: 50px;
+      text-align: center;
+      padding-top: 20px;
+    }
+    #aboutme {
+      font-family: Raleway;
+      color: #600c0c;
+      font-size: 30px;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .aboutme-p {
+      font-size: 15px;
+      font-family: Sora;
+      text-align: center;
+      color: #600c0c;
+    }
+    .box h3 {
+      font-size: 20px;
+      color: #f6e4d6;
+      font-family: "Raleway";
+      text-align: center;
+      margin: 10px 10px;
+      border: 1px solid #f6e4d6;
+      border-radius: 10px;
+    }
+    .box h3:hover {
+      color: #600c0c;
+      background-color: #f6e4d6;
+      transition: 0.5s linear;
+    }
+    .box p {
+      font-size: 15px;
+      font-family: Sora;
+      text-align: center;
+      color: #f6e4d6;
+      margin: 25px 26px;
+    }
+    .skills {
+      font-family: Raleway;
+      color: #600c0c;
+      font-size: 30px;
+      text-align: center;
+      padding-top: 20px;
+    }
+    hr {
+      width: 50%;
+      border: 1px solid #600c0c;
+    }
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 50%;
+      text-align: center;
+      margin-top: 20px;
+    }
+    table th {
+      font-family: Raleway;
+      font-size: 20px;
+      color: #f6e4d6;
+      padding: 10px;
+      border: 1px solid #f6e4d6;
+      background-color: #600c0c;
+    }
+    table th:hover {
+      color: #600c0c;
+      background-color: #f6e4d6;
+      transition: 0.5s linear;
+      border: 1px solid #600c0c;
+    }
+    table td {
+      font-family: Sora;
+      font-size: 15px;
+      color: #600c0c;
+      padding: 10px;
+      border: 1px solid #600c0c;
+    }
+    #contact {
+      font-family: Raleway;
+      color: #f6e4d6;
+      font-size: 30px;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .btn {
+      background-color: #f6e4d6;
+      color: #600c0c;
+      font-family: Raleway;
+      font-size: 15px;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      margin-left: 40%;
+      margin-bottom: 12px;
+    }
+
+    .btn:hover {
+      transition: 0.5s linear;
+      box-shadow: 0 0 10px #f6e4d6;
+    }
+    .input {
+      width: 50%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 10px;
+      align-items: center;
+      border: none;
+      font-size: 15px;
+      margin-left: 25%;
+      color: #600c0c;
+    }
+    .form {
+      max-width: 50%;
+      max-height: 50%;
+      background-color: #600c0c;
+      border-radius: 20px;
+      align-items: center;
+      margin: 20px;
+      margin-left: 25%;
+    }
+    .vid{
+      width: 50%;
+      height: 20%;
+      margin-left: 25%;
+    }
+    .vid-title{
+      font-family: Raleway;
+      color: #600c0c;
+      font-size: 30px;
+      text-align: center;
+      padding-top: 20px;
+    }
+  </style>
+  <body>
+    <!-- The navbar -->
+    <nav class="navbar">
+      <h1 class="lg">In.</h1>
+      <ul>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Added portfolio heading here -->
+    <h1 class="port">My Portfolio</h1>
+    <!-- Added about me section here -->
+    <h2 id="aboutme">About Me</h2>
+    <p class="aboutme-p">
+      Welcome to my portfolio website. <br />Here you will find information
+      about my projects and skills.
+    </p>
+    <hr />
+    <!-- Added project section here -->
+    <h2 id="projects">Projects</h2>
+    <div class="box">
+      <div class="box1">
+        <h3>Chat System</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          labore totam enim incidunt laboriosam, asperiores, repellat
+          necessitatibus ipsum, in placeat architecto exercitationem adipisci.
+        </p>
+      </div>
+      <div class="box2">
+        <h3>House Rental System</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          labore totam enim incidunt laboriosam, asperiores, repellat
+          necessitatibus ipsum, in placeat architecto exercitationem adipisci.
+        </p>
+      </div>
+      <div class="box3">
+        <h3>Blog Management System</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          labore totam enim incidunt laboriosam, asperiores, repellat
+          necessitatibus ipsum, in placeat architecto exercitationem adipisci.
+        </p>
+      </div>
+    </div>
+    <hr />
+    <!-- skills table -->
+    <h2 class="skills">My Skills</h2>
+    <table>
+      <tr>
+        <th>Skill</th>
+        <th>Proficiency</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Advanced</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Intermediate</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>A Little Bit</td>
+      </tr>
+    </table>
+    <hr />
+    <!-- contact form -->
+    <form action="#" class="form">
+      <h2 id="contact">Contact Me</h2>
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+        class="input"
+      /><br />
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+        class="input"
+      /><br />
+      <textarea
+        name="message"
+        placeholder="Your Message"
+        rows="4"
+        required
+        class="input"
+      ></textarea
+      ><br />
+      <input type="submit" value="Send Message" class="btn" />
+    </form>
+    <hr />
+    <!-- video section -->
+    <h2 class="vid-title">Video</h2>
+    <video src="./Recording 2025-03-10 000021.mp4" autoplay class="vid"></video>
+    <hr>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
